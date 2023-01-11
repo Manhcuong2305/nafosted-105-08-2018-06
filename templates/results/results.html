@@ -1,0 +1,258 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<main id="main">
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+        <div class="container">
+
+        <div class="logo float-left">
+            <h1 class="text-light"><a href="{% url 'home' %}"><span>BKT</span></a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+
+        <nav class="nav-menu float-right d-none d-lg-block">
+            <ul>
+                <li><a href="{% url 'home' %}">Trang chủ</a></li>
+                <li><a href="{% url 'research_team' %}">Nhóm nghiên cứu</a></li>
+                <li class="active"><a href="{% url 'results' %}">Kết quả</a></li>
+                <li><a href="{% url 'service' %}">Dịch vụ</a></li>
+                <li><a href="{% url 'contact' %}">Liên hệ</a></li>
+            </ul>
+        </nav><!-- .nav-menu -->
+
+        </div>
+    </header><!-- End Header -->
+
+    <!-- ======= About Us Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>KẾT QUẢ ĐỀ TÀI</h2>
+          <ol>
+            <li><a href="{% url 'home' %}">Trang chủ</a></li>
+            <li>Kết Quả</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    {% comment %} <!-- ======= About Section ======= -->
+    <section class="about" data-aos="fade-up">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="{% static 'assets/img/about.jpg'%}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <p class="font-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            </ul>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section --> {% endcomment %}
+
+    <section class="about" data-aos="fade-up">
+        <div class="container">
+            <div class="section-title">
+                <h2>THỐNG KÊ CÁC KẾT QUẢ NGHIÊN CỨU CHÍNH</h2>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Facts Section ======= -->
+    <section class="facts section-bg" data-aos="fade-up">
+      <div class="container">
+
+        <div class="row counters">
+
+          <div class="text-center" style="width: 20%;">
+            <span data-toggle="counter-up">01</span>
+            <p>Bài báo quốc gia uy tín</p>
+          </div>
+
+          <div class="text-center" style="width: 20%;">
+            <span data-toggle="counter-up">02</span>
+            <p>Bài báo quốc tế uy tín</p>
+          </div>
+
+          <div class="text-center" style="width: 20%;">
+            <span data-toggle="counter-up">01</span>
+            <p>Chương sách trong tuyển tập hội thảo quốc tế của NXB Springer có trong danh mục Scopus</p>
+          </div>
+
+          <div class="text-center" style="width: 20%;">
+            <span data-toggle="counter-up">01</span>
+            <p>Website về xử lý số liệu quan trắc chuyển dịch đập</p>
+          </div>
+
+          <div class="text-center" style="width: 20%;">
+            <span data-toggle="counter-up">01</span>
+            <p>Hỗ trợ đào tạo nghiên cứu sinh đã nhận học vị Tiến sĩ</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+    <!-- ======= Blog Section ======= -->
+    <section class="blog" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+        <div class="container">
+            <div class="section-title">
+                <h2>CHI TIẾT</h2>
+                <p></p>
+            </div>
+            <div class="row">
+  
+            <div class="col-lg-12 entries">
+  
+              <article class="entry">
+  
+                <div class="entry-img">
+                  <img src="{% static 'assets/img/results/researchsquare.png'%}" alt="" class="img-fluid">
+                </div>
+  
+                <h2 class="entry-title">
+                  <a href="blog-single.html">Application of Interval Type-2 Fuzzy Logic System and Ant Colony Optimization for Hydropower Dams Displacement Forecasting</a>
+                </h2>
+  
+                <div class="entry-meta">
+                  <ul>
+                    <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html">Kien-Trinh Bui-Thi</a></li>
+                    <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="blog-single.html"><time datetime="2022-04-04">Apr 4, 2022</time></a></li>
+                  </ul>
+                </div>
+  
+                <div class="entry-content">
+                    <p>Tạp chí: International Journal of Fuzzy Systems </p>
+                    <p>DOI: 10.21203/rs.3.rs-1303423/v1 PPR: PPR477870 </p>
+                    <div class="read-more">
+                    <a href="https://www.researchsquare.com/article/rs-1303423/v1">Xem chi tiết</a>
+                    </div>
+                </div>
+  
+              </article><!-- End blog entry -->
+  
+              <article class="entry">
+  
+                <div class="entry-img">
+                  <img src="{% static 'assets/img/results/wiley.png'%}" alt="" class="img-fluid">
+                </div>
+  
+                <h2 class="entry-title">
+                  <a href="blog-single.html">Deformation forecasting of a hydropower dam by hybridizing a long short-term memory deep learning network with the coronavirus optimization algorithm</a>
+                </h2>
+  
+                <div class="entry-meta">
+                  <ul>
+                    <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html">Kien-Trinh Bui-Thi</a></li>
+                    <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="blog-single.html"><time datetime="2022-01-12">Jan 12,2022</time></a></li>
+                  </ul>
+                </div>
+  
+                <div class="entry-content">
+                    <p>Tạp chí: Computer-Aided Civil and Infrastructure Engineering </p>
+                    <p>DOI: https://doi.org/10.1111/mice.12810 </p>
+                  <div class="read-more">
+                    <a href="https://onlinelibrary.wiley.com/doi/10.1111/mice.12810">Xem chi tiết</a>
+                  </div>
+                </div>
+  
+              </article><!-- End blog entry -->
+  
+              <article class="entry">
+  
+                <div class="entry-img">
+                  <img src="{% static 'assets/img/results/vnu.png'%}" alt="" class="img-fluid" style="width: 100%;">
+                </div>
+  
+                <h2 class="entry-title">
+                  <a href="blog-single.html">Application of Statistic Model and Backpropagation Neural Network to Analyzing and Forecasting Hydropower Dam Displacement</a>
+                </h2>
+  
+                <div class="entry-meta">
+                  <ul>
+                    <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html">Kien-Trinh Bui-Thi</a></li>
+                    <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="blog-single.html"><time datetime="2021-03-07">Mar 7, 2021</time></a></li>
+                  </ul>
+                </div>
+  
+                <div class="entry-content">
+                    <p>Tạp chí: VNU Journal of Science: Earth and Environmental Sciences </p>
+                    <p>DOI: https://doi.org/10.25073/2588-1094/vnuees.4529 </p>
+                  <div class="read-more">
+                    <a href="https://js.vnu.edu.vn/EES/article/view/4529">Xem chi tiết</a>
+                  </div>
+                </div>
+  
+              </article><!-- End blog entry -->
+  
+              <article class="entry">
+  
+                <div class="entry-img">
+                  <img src="{% static 'assets/img/results/scopus.png'%}" alt="" class="img-fluid">
+                </div>
+  
+                <h2 class="entry-title">
+                  <a href="blog-single.html">An Assessment of Some Algorithms for Modeling and Forecasting Horizontal Displacement of Ialy Dam, Vietnam</a>
+                </h2>
+  
+                <div class="entry-meta">
+                  <ul>
+                    <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html">Kien-Trinh Bui-Thi</a></li>
+                    <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="blog-single.html"><time datetime="2023-01-01">Jan 1, 2023</time></a></li>
+                  </ul>
+                </div>
+  
+                <div class="entry-content">
+                    <p>Tạp chí: Advances in Research on Water Resources and Environmental Systems  </p>
+                    <p>DOI: 10.1007/978-3-031-17808-5_4 </p>
+                  <div class="read-more">
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-031-17808-5_4">Xem chi tiết</a>
+                  </div>
+                </div>
+  
+              </article><!-- End blog entry -->
+  
+              <div class="blog-pagination">
+                <ul class="justify-content-center">
+                  <li class="disabled"><i class="icofont-rounded-left"></i></li>
+                  <li><a href="#">1</a></li>
+                  <li class="active"><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#"><i class="icofont-rounded-right"></i></a></li>
+                </ul>
+              </div>
+  
+            </div><!-- End blog entries list -->
+  
+  
+          </div><!-- End .row -->
+  
+        </div><!-- End .container -->
+  
+    </section><!-- End Blog Section -->    
+
+</main><!-- End #main -->
+{% endblock content %}

@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top ">
+    <div class="container">
+
+      <div class="logo float-left">
+        <h1 class="text-light"><a href="{% url 'home' %}"><span>BKT</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu float-right d-none d-lg-block">
+        <ul>
+            <li><a href="{% url 'home' %}">Trang chủ</a></li>
+            <li><a href="{% url 'research_team' %}">Nhóm nghiên cứu</a></li>
+            <li><a href="{% url 'results' %}">Kết quả</a></li>
+            <li><a href="{% url 'service' %}">Dịch vụ</a></li>
+            <li class="active"><a href="{% url 'contact' %}">Liên hệ</a></li>
+        </ul>
+    </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Contact Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>LIÊN HỆ CUNG CẤP DỊCH VỤ</h2>
+          <ol>
+            <li><a href="{% url 'home' %}">Trang chủ</a></li>
+            <li>Liên hệ</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section class="contact" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bx bx-map"></i>
+                  <h3>Địa chỉ</h3>
+                  <p>175 P. Tây Sơn, Trung Liệt, Đống Đa, Hà Nội</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Hòm thư điện tử</h3>
+                  <p>info@example.com<br>contact@example.com</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Điện thoại</h3>
+                  <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Người gửi"
+                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email"
+                    data-rule="email" data-msg="Nội dung" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Chủ đề"
+                  data-rule="minlen:4" data-msg="Nhập ít nhất 8 ký tự" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required"
+                  data-msg="Please write something for us" placeholder="Nội dung"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Đang gửi</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Thư của bản đã được gửi. Chân thành cảm ơn!</div>
+              </div>
+              <div class="text-center"><button type="submit">GỬI</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+    <!-- ======= Map Section ======= -->
+    <section class="map mt-2">
+      <div class="container-fluid p-0">
+        <iframe
+          src="https://maps.google.com/maps?width=1856&amp;height=386&amp;hl=en&amp;q=Thuỷ lợi &amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+    </section><!-- End Map Section -->
+
+</main><!-- End #main -->
+{% endblock content %}

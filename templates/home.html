@@ -1,0 +1,303 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-cntent-center align-items-center">
+    <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animated fadeInDown">ĐỀ TÀI <span>NAFOSTED</span></h2>
+          <p class="animated fadeInUp">MÃ SỐ 105.08-2018.06</p>
+          <a href="" class="btn-get-started animated fadeInUp">Read More</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animated fadeInDown">Lorem Ipsum Dolor</h2>
+          <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+          <a href="" class="btn-get-started animated fadeInUp">Read More</a>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Services Section ======= -->
+    <section class="services">
+      <div class="container">
+        <div class="section-title" style="padding-top: 60px">
+          <h2>KHU VỰC NGHIÊN CỨU</h2>
+          <p>Dự án được tiến hành tại 04 đập thủy điện tiêu biểu tại Việt Nam</p>
+        </div>
+        <div class="row" style="margin-bottom: 30px;font-family: "Roboto"; color: #444;">
+          {% comment %} <div class="col-md-12">
+            <p class="text-center" style="font-size: 20px">Dự án được tiến hành tại 04 đập thủy điện tiêu biểu tại Việt Nam</p>
+          </div> {% endcomment %}
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="icon-box icon-box-pink">
+              <img class="ttr_uniform" src="{% static 'assets/img/dam/49.jpg' %}" style="max-width: 100%; padding-bottom: 10px;"></img>
+              {% comment %} <div class="icon"><i class="bx bxl-dribbble"></i></div> {% endcomment %}
+              <h4 class="title"><a href="">Đập thủy điện Hoà Bình</a></h4>
+
+              {% comment %} <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> {% endcomment %}
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box icon-box-cyan">
+              <img class="ttr_uniform" src="{% static 'assets/img/dam/50.jpg' %}" style="max-width: 100%; padding-bottom: 10px;"></img>
+              <h4 class="title"><a href="">Đập thủy điện Yaly</a></h4>
+              
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box icon-box-green">
+              <img class="ttr_uniform" src="{% static 'assets/img/dam/52.jpg' %}" style="max-width: 100%; padding-bottom: 10px;"></img>
+              <h4 class="title"><a href="">Đập thủy điện Sơn La</a></h4>
+              
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box icon-box-blue">
+              <img class="ttr_uniform" src="{% static 'assets/img/dam/51.jpg' %}" style="max-width: 100%; padding-bottom: 10px;"></img>
+              <h4 class="title"><a href="">Đập Dầu Tiếng</a></h4>
+              
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+    <!-- ======= Why Us Section ======= -->
+    <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+      <div class="container">
+        <div class="section-title" style="padding-top: 60px">
+          <h2>NỘI DUNG NGHIÊN CỨU</h2>
+          <p>-- What did we do? --</p>
+        </div>
+
+        <div class="row">
+          {% comment %} video
+          <div class="col-lg-6 video-box">
+            <img src="assets/img/why-us.jpg" class="img-fluid" alt="">
+            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+          </div> {% endcomment %}
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+            <div class="icon-box">
+              {% comment %} <div class="icon"><i class="bx bx-fingerprint"></i></div> {% endcomment %}
+              <div class="icon"><img src="{% static 'assets/img/doing/collect.png' %}" style="max-width: 100%;"></img></div>
+              <h4 class="title"><a href="">Thu thập</a></h4>
+              <p class="description">Các dữ liệu quan trắc chuyển dịch biến dạng đập như Mực nước, nhiệt độ không khí, nhiệt độ thân đập, áp lực thấm, khe hở bề mặt, khe hở đáy, chuyển dịch bề mặt… để thiết kế xây dựng cơ sở dữ liệu cho mỗi đập.</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><img src="{% static 'assets/img/doing/analyze.png' %}" style="max-width: 100%;"></img></div>
+              <h4 class="title"><a href="">Phân tích</a></h4>
+              <p class="description">Xác định các yếu tố ảnh hưởng đến chuyển dịch và vai trò của mỗi yếu tố ảnh hưởng đó cũng như quy luật của chúng.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+            <div class="icon-box">
+              <div class="icon"><img src="{% static 'assets/img/doing/modeling.png' %}" style="max-width: 100%;"></img></div>
+              <h4 class="title"><a href="">Mô hình hoá</a></h4>
+              <p class="description">Nghiên cứu phát triển các mô hình tiên tiến (SARIMA, ANN, BPNN, Gaussian Process, Long Short Term Memory network…) và các thuật toán tối ưu hóa (PSO, CVOA, ACO…) ứng dụng cho cơ sở dữ liệu quan trắc đập.</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><img src="{% static 'assets/img/doing/forecast.png' %}" style="max-width: 100%;"></img></div>
+              <h4 class="title"><a href="">Dự báo</a></h4>
+              <p class="description">Chuyển dịch của đập được dự báo trong tương lai gần từ 6-12 tháng nhằm phục vụ quản lý vận hành đập một cách an toàn và khoa học.</p>
+            </div>
+
+          
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section class="features">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>CÁC MÔ HÌNH CHUYỂN DỊCH ĐẬP</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-5">
+            <img src="{% static 'assets/img/models/linear.png'%}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-4">
+            <h3>Mô hình tất định</h3>
+            <p class="font-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="icofont-check"></i> Multi-linear regression.</li>
+              <li><i class="icofont-check"></i> Gausian Process.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-5 order-1 order-md-2">
+            <img src="{% static 'assets/img/models/statistic.png'%}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-5 order-2 order-md-1">
+            <h3>Mô hình thống kê</h3>
+            <p class="font-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <p>
+              SARIMA - Seasonal Auto-Regressive Integrated Moving Average.
+            </p>
+          </div>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-5">
+            <img src="{% static 'assets/img/models/neural.png'%}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-5">
+            <h3>Mô hình mạng thần kinh nhân tạo</h3>
+            <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
+            <ul>
+              <li><i class="icofont-check"></i> BPNN - Backpropagation Neural Network, Gaussian Process.</li>
+              <li><i class="icofont-check"></i> Multi-layer Perceptron Neural Network.</li>
+              <li><i class="icofont-check"></i> ANN - Artificial Neural Network.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-5 order-1 order-md-2">
+            <img src="{% static 'assets/img/models/other_models.png'%}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-5 order-2 order-md-1">
+            <h3>Mô hình khác</h3>
+            <p class="font-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="icofont-check"></i> BPNNM5-Rules.</li>
+              <li><i class="icofont-check"></i> LSTM - Long Short Term Memory Network.</li>
+              <li><i class="icofont-check"></i> Fuzzy logic.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-5">
+            <img src="{% static 'assets/img/models/algorithm.png'%}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-5">
+            <h3>Thuật toán tối ưu</h3>
+            <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
+            <ul>
+              <li><i class="icofont-check"></i> CVOA - Corona Virus Optimization Algorithm.</li>
+              <li><i class="icofont-check"></i> ACO - Ant Colony Optimization.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Results Section ======= -->
+    <section class="features">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>CÁC KẾT QUẢ NGHIÊN CỨU CHÍNH</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-4">
+            <img src="{% static 'assets/img/results/vnu.png'%}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-8 pt-4">
+            <h3>Bài báo trên tạp chí quốc gia uy tín</h3>
+            {% comment %} <p class="font-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p> {% endcomment %}
+            <p class="font-italic">
+              Truy cập: <a href="https://js.vnu.edu.vn/EES/article/view/4529">Click here!</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-4">
+            <img src="{% static 'assets/img/results/wiley.png'%}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-8 pt-4">
+            <h3>Bài báo trên tạp chí quốc tế uy tín</h3>
+            <p class="font-italic">
+              Truy cập: <a href="https://onlinelibrary.wiley.com/doi/10.1111/mice.12810">Click here!</a>
+            </p>
+          </div>
+        </div>
+        
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-4">
+            <img src="{% static 'assets/img/results/researchsquare.png'%}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-8 pt-4">
+            <h3>Bài báo trên tạp chí quốc tế uy tín</h3>
+            <p class="font-italic">
+              Truy cập: <a href="https://www.researchsquare.com/article/rs-1303423/v1">Click here!</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-4">
+            <img src="{% static 'assets/img/results/scopus.png'%}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-8 pt-4">
+            <h3>Bài báo hội thảo quốc tế có kỷ yếu được xuất bản bởi Springer Nature, trong danh mục Scopus</h3>
+            <p class="font-italic">
+              Truy cập: <a href="https://link.springer.com/book/10.1007/978-3-031-17808-5">Click here!</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+  </main><!-- End #main -->
+
+
+{% endblock content %}

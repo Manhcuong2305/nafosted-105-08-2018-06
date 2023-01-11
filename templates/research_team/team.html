@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+        <div class="container">
+
+            <div class="logo float-left">
+                <h1 class="text-light"><a href="{% url 'home' %}"><span>BKT</span></a></h1>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            </div>
+            <nav class="nav-menu float-right d-none d-lg-block">
+                <ul>
+                <li><a href="{% url 'home' %}">Trang chủ</a></li>
+                <li class="active"><a href="{% url 'research_team' %}">Nhóm nghiên cứu</a></li>
+                <li><a href="{% url 'results' %}">Kết quả</a></li>
+                <li><a href="{% url 'service' %}">Dịch vụ</a></li>     
+                <li><a href="{% url 'contact' %}">Liên hệ</a></li>
+                </ul>
+            </nav><!-- .nav-menu -->
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+
+        <!-- ======= Our Team Section ======= -->
+        <section class="breadcrumbs">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+            <h2>NHÓM NGHIÊN CỨU</h2>
+            <ol>
+                <li><a href="{% url 'home' %}">Trang chủ</a></li>
+                <li>Nhóm Nghiên Cứu</li>
+            </ol>
+            </div>
+
+        </div>
+        </section><!-- End Our Team Section -->
+
+        <!-- ======= Team Section ======= -->
+
+        <section class="team" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+            <div class="container">
+                <div class="section-title">
+                    <h2>GIỚI THIỆU VỀ CHÚNG TÔI</h2>
+                    <p>Nhóm thực hiện bao gồm 5 nhà khoa học đồng thời là giảng viên của trường đại học, học viện đã có nhiều kinh nghiệm và kết quả nghiên cứu được công bố trên các tạp chí khoa học có uy tín trong và ngoài nước.</p>
+                </div>
+
+                <div class="row">
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member">
+                    <div class="member-img">
+                        <img src="{% static 'assets/img/team/bui-kien-trinh.png'%}" class="img-fluid" alt="">
+                        <div class="social">
+                        <a href=""><i class="icofont-twitter"></i></a>
+                        <a href=""><i class="icofont-facebook"></i></a>
+                        <a href=""><i class="icofont-instagram"></i></a>
+                        <a href=""><i class="icofont-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4>TS. Bùi Thị Kiên Trinh</h4>
+                        <span>Chủ nhiệm đề tài</span>
+                        <p style="text-align:justify;">TS. Bùi Thị Kiên Trinh đã có trên 15 năm giảng dạy, nghiên cứu các lĩnh vực liên quan đến quan trắc đập thủy điện, tham gia 7 đề tài các cấp liên quan đến đập và công bố 20 công trình khoa học ở các tạp chí và hội nghị, hội thảo trong và ngoài nước. Đặc biệt, có 03 công bố trên tạp chí ISI, 04 công bố trên tạp chí và tuyển tập trong danh mục Scopus, 01 chương sách của NXB Academic Press – Elsevier về mô hình hóa và dự báo chuyển dịch biến dạng đập thủy điện..</p>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member">
+                    <div class="member-img">
+                        <img src="{% static 'assets/img/team/tran-the-viet.png'%}" class="img-fluid" alt="">
+                        <div class="social">
+                        <a href=""><i class="icofont-twitter"></i></a>
+                        <a href=""><i class="icofont-facebook"></i></a>
+                        <a href=""><i class="icofont-instagram"></i></a>
+                        <a href=""><i class="icofont-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4>PGS.TS. Trần Thế Việt</h4>
+                        <span>Thành viên nghiên cứu chủ chốt</span>
+                        <p style="text-align:justify;">PGS.TS. Trần Thế Việt đã có 9 năm giảng dạy và nghiên cứu chú yếu về phân tích, đánh giá, dự báo các tai biến địa chất đối với nền móng công trình xây dựng, trong đó có ứng dụng trí thông minh nhân tạo để quản lý an toàn các đập lớn tại Việt Nam. PGS.TS. Trần Thế Việt đã công bố 08 bài báo ISI trong danh mục Q1-Q2, 01 chương sách của NXB CRC Press – Taylor&Francis, tham dự nhiều hội nghị - hội thảo quốc tế.</p>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member">
+                    <div class="member-img">
+                        <img src="{% static 'assets/img/team/do-xuan-khanh.png'%}" class="img-fluid" alt="">
+                        <div class="social">
+                        <a href=""><i class="icofont-twitter"></i></a>
+                        <a href=""><i class="icofont-facebook"></i></a>
+                        <a href=""><i class="icofont-instagram"></i></a>
+                        <a href=""><i class="icofont-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4>TS. Đỗ Xuân Khánh</h4>
+                        <span>Thành viên nghiên cứu chủ chốt</span>
+                        <p style="text-align:justify;">TS. Đỗ Xuân Khánh đã có trên 15 năm kinh nghiệm trong nghiên cứu mô hình phân tích ổn định, an toàn đập và hồ chứa phục vụ phòng tránh giảm nhẹ thiên tai. TS. Đỗ Xuân Khánh đã công bố 04 bài báo ISI, 05 bài báo tại các tạp chí quốc tế có trong danh mục Scopus và nhiều bài báo tham dự hội nghị, hội thảo quốc tế, trong nước.</p>
+                    </div>
+                    </div>
+                </div>
+
+                {% comment %} <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                    <div class="member">
+                        <div class="member-img">
+                            <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                            <div class="social">
+                            <a href=""><i class="icofont-twitter"></i></a>
+                            <a href=""><i class="icofont-facebook"></i></a>
+                            <a href=""><i class="icofont-instagram"></i></a>
+                            <a href=""><i class="icofont-linkedin"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="member-info">
+                            <h4>Amanda Jepson</h4>
+                            <span>Accountant</span>
+                            <p>Sint qui cupiditate. Asperiores fugit impedit aspernatur et mollitia. Molestiae qui placeat labore assumenda id qui nesciunt quo reprehenderit. Rem dolores similique quis soluta culpa enim quia ratione ea.</p>
+                        </div>
+                    </div>
+                </div> {% endcomment %}
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member">
+                    <div class="member-img">
+                        <img src="{% static 'assets/img/team/mai-dinh-sinh.png'%}" class="img-fluid" alt="">
+                        <div class="social">
+                        <a href=""><i class="icofont-twitter"></i></a>
+                        <a href=""><i class="icofont-facebook"></i></a>
+                        <a href=""><i class="icofont-instagram"></i></a>
+                        <a href=""><i class="icofont-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4>TS. Mai Đình Sinh</h4>
+                        <span>Nghiên cứu sinh được hỗ trợ</span>
+                        <p style="text-align:justify;">TS. Mai Đình Sinh đã có nhiều nghiên cứu trong xây dựng phần mềm phân tích dữ liệu, phát triển các mô hình phân tích dự báo trong lĩnh vực viễn thám. TS. Mai Đình Sinh đã công bố 08 bài báo ISI, 10 bài báo trên các tạp chí khoa học có uy tín khác, tham gia nhiều hội nghị - hội thảo khoa học quốc tế và có nhiều đóng góp trong các kết quả chính của đề tài.</p>
+                    </div>
+                    </div>
+                </div>
+
+                {% comment %} <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                    <div class="member">
+                        <div class="member-img">
+                            <img src="assets/img/team/team-5.jpg" class="img-fluid" alt="">
+                            <div class="social">
+                            <a href=""><i class="icofont-twitter"></i></a>
+                            <a href=""><i class="icofont-facebook"></i></a>
+                            <a href=""><i class="icofont-instagram"></i></a>
+                            <a href=""><i class="icofont-linkedin"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="member-info">
+                            <h4>Niall Katz</h4>
+                            <span>Marketing</span>
+                            <p>Aut ex esse explicabo quia harum ea accusamus excepturi. Temporibus at quia quisquam veritatis impedit. Porro laborum voluptatum sed necessitatibus a saepe. Deserunt laborum quasi consequatur voluptatum iusto sint qui fuga vel. Enim eveniet sed quibusdam rerum in. Non dicta architecto consequatur quo praesentium nesciunt.</p>
+                        </div>
+                    </div>
+                </div> {% endcomment %}
+
+            </div>
+        </section><!-- End Team Section -->
+
+    </main><!-- End #main -->
+
+{% endblock %}
